@@ -4,3 +4,11 @@ function isPrime(num:number):boolean{
         isprime = true;
         return isprime
     }
+    for(let i = 2; i < num/2; i++){
+        if(num % i == 0){
+            isprime = false;
+            break;
+        }
+    }
+    return isprime;
+}
